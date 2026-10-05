@@ -91,7 +91,6 @@ header#home {
   z-index: 2;
 
   /* Unga video duration 10s-na '10s' nu podunga, 5s-na '5s' nu podunga */
-  animation: smoothLoopFade 11s infinite;
 }
 
 /* Video restart aagumbodhu dark overlay black-a maari jerk-a maraikkum */
