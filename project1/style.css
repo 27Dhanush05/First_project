@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoon feel font */
+}
+
+body {
+  background-color: #6495ed; /* Bright yellow background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 40px 30px 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px #000; /* Solid cartoon shadow */
+  border: 4px solid #000;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+/* Character Styling */
+.cartoon-character {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background-color: #ff914d;
+  border-radius: 50%;
+  border: 4px solid #000;
+  z-index: 1;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+  padding: 0 15px;
+}
+
+.eye {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+  border: 3px solid #000;
+  position: relative;
+}
+
+.pupil {
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+
+.mouth {
+  width: 25px;
+  height: 12px;
+  border-bottom: 4px solid #000;
+  border-radius: 0 0 20px 20px;
+  margin: 15px auto 0;
+}
+
+/* Password click panna hands mela vandhu kanna moodum */
+.hand.cover {
+  bottom: 42px; /* Smooth-a mela vandhu kannu mela ukaarum */
+} /* Cartoon Hands - Head-ku SIDE-la irukkum */
+.hand {
+  position: absolute;
+  width: 38px;
+  height: 42px;
+  background-color: #ffffff; /* White glove */
+  border: 3px solid #000;
+  border-radius: 18px;
+  top: 35px; /* Side-la face center-ku align aagum */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth side-sliding animation */
+  z-index: 10;
+}
+
+/* Finger lines inside gloves */
+.hand::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 12px;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+/* Normal state: Left Hand side-la exterior-a irukkum */
+.left-hand {
+  left: -38px;
+  transform: rotate(-25deg);
+}
+
+/* Normal state: Right Hand side-la exterior-a irukkum */
+.right-hand {
+  right: -38px;
+  transform: rotate(25deg);
+}
+
+/* Password field focus aagum podhu: Hands side-la irundhu ulla vandhu kanna moodum 🙈 */
+.left-hand.cover {
+  left: 14px;
+  top: 28px;
+  transform: rotate(0deg);
+}
+
+.right-hand.cover {
+  right: 14px;
+  top: 28px;
+  transform: rotate(0deg);
+}
+
+/* Form Styles */
+h2 {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #ff914d;
+  box-shadow: 4px 4px 0px #ff914d;
+  transform: translate(-2px, -2px);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #00bf63; /* Green button */
+  color: white;
+  border: 3px solid #000;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px #000;
+  transition: 0.1s;
+  margin-top: 15px;
+}
+
+.login-btn:active {
+  box-shadow: 0px 0px 0px #000;
+  transform: translate(5px, 5px);
+}

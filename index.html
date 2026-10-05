@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="/statistic.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section with Video Background -->
+    <header id="home">
+      <!-- Local Video Tag -->
+      <video autoplay muted loop playsinline class="hero-video">
+        <!-- Inga bg-video.mp4 nu irukurdhu badhila unga local video file name-a podunga -->
+        <source src="/92718-637669246_medium.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Dark Overlay (Text Clear-a theriya) -->
+      <div class="hero-overlay"></div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">DHANUSH MP</span></h1>
+        <p>Passionate Web & Software Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <p>
+          Hello! I am a passionate developer skilled in building clean,
+          responsive, and modern web applications. I enjoy converting ideas into
+          interactive websites and continually learning new technologies.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <a href="/project1/project1.html">
+          <div class="card">
+            <h3>Cartoon Login Page</h3>
+            <p>
+              An interactive cartoon-themed login page with smooth side-glove
+              animation using CSS & JavaScript.
+            </p>
+          </div>
+        </a>
+        <a href="/multimediablog/blog.html">
+          <div class="card">
+            <h3>Multimedia Blog</h3>
+            <p>
+              A multimedia webpage featuring audio tracks and video clips built
+              with semantic HTML.
+            </p>
+          </div>
+        </a>
+        <a href="/list_project/roadmap.html">
+          <div class="card">
+            <h3>Developer Tech Roadmap</h3>
+            <p>
+              A structured developer roadmap page showcasing ordered, unordered,
+              and description lists with semantic HTML.
+            </p>
+          </div>
+        </a>
+        <a href="/Table_project/timetable.html">
+          <div class="card">
+            <h3>Tap Time Table</h3>
+            <p>
+              A weekly Tap Academy course schedule showcasing HTML table
+              elements, header rows, and column spans.
+            </p>
+          </div>
+        </a>
+        <a href="/Trave_website/travel.html">
+          <div class="card">
+            <h3>Travel Blogging Website</h3>
+            <p>
+              A travel blog showcasing the top 10 famous places in Bengaluru
+              with images, ratings, addresses, and live embedded maps.
+            </p>
+          </div>
+        </a>
+        <a href="/Registration Form/registration page.html">
+          <div class="card">
+            <h3>Registration Form</h3>
+            <p>
+              A travel blog showcasing the top 10 famous places in Bengaluru
+              with images, ratings, addresses, and live embedded maps.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section with Semantic HTML Tags -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <!-- <address> tag is the proper semantic tag for contact information -->
+      <address class="contact-details">
+        <!-- Email Link -->
+        <div class="contact-item">
+          <strong>Email:</strong>
+          <a href="mailto:dhanudhanush2212@gmail.com"
+            >dhanudhanush2212@gmail.com</a
+          >
+        </div>
+
+        <!-- Phone Link -->
+        <div class="contact-item">
+          <strong>Phone:</strong>
+          <a href="tel:9629784701">+91 9629784701</a>
+        </div>
+
+        <!-- Location / Address -->
+        <div class="contact-item">
+          <strong>Address:</strong>
+          <p>BTM 1st stage, Bengaluru, Karnataka, India</p>
+        </div>
+      </address>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Your Name. Built with HTML & CSS.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+/* ==========================================
+   TRAVEL BLOG PAGE STYLES (Bengaluru Places)
+   ========================================== */
+body {
+  background-color: #1e293b;
+}
+
+.travel-header {
+  text-align: center;
+  padding: 50px 20px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.travel-header h1 {
+  font-size: 2.3rem;
+  color: #ff5722;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.travel-header p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  margin-top: 8px;
+}
+
+.travel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+/* Card Grid Layout */
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Card Component */
+.place-card {
+  background: #1e293b;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(255, 87, 34, 0.15);
+}
+
+.place-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.card-body h2 {
+  color: #f8fafc;
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.famous-for {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.famous-for i {
+  color: #ff5722;
+  font-size: 0.8rem;
+}
+
+/* Rating Stars */
+.rating {
+  color: #f59e0b; /* Gold star color */
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating span {
+  color: #cbd5e1;
+  margin-left: 6px;
+  font-size: 0.88rem;
+  font-weight: bold;
+}
+
+/* Address */
+.address {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.address i {
+  color: #ff5722;
+  margin-top: 3px;
+}
+
+/* Google Maps Iframe */
+.card-body iframe {
+  width: 100%;
+  height: 160px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 10px;
+}

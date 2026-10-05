@@ -1,0 +1,132 @@
+/* ==========================================
+   REGISTRATION FORM STYLES (Pure CSS for Native Tags)
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Main Form Container */
+form {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Fieldset & Legend Styling */
+fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: #ff5722;
+  font-weight: bold;
+  padding: 0 10px;
+  font-size: 1.1rem;
+}
+
+/* Labels & Text Formatting */
+label {
+  display: block;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Input Fields & Select Boxes */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff5722;
+}
+
+/* Radio & Checkbox Styling */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #ff5722;
+  margin-right: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Fix for Inline Labels on Radios/Checkboxes */
+fieldset input[type="radio"] + label,
+fieldset input[type="checkbox"] + label {
+  display: inline-block;
+  margin-top: 0;
+}
+
+/* Submit Button */
+button,
+input[type="submit"] {
+  background-color: #ff5722;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 15px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #e64a19;
+}
+
+/* Back to Portfolio Clickable Link Styling */
+a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+a:hover {
+  color: #e64a19;
+  text-decoration: underline;
+}
